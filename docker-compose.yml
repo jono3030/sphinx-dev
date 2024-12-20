@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  sphinx:
+    image: josmann/sphinx_dev_img:latest
+    tty: true
+    container_name: sphinx_dev
+    entrypoint: bash
+    volumes:
+      - /path/to/miracl/docs:/docs
